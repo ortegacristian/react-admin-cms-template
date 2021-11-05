@@ -2,17 +2,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
+// Constantes
+import navigationLinks from '../../constants/Navigation';
+
 // Componentes
 import { NavigationLink } from './NavigationLink';
 
-export const Navigation = () => {
-  const navigationLinks = [
-    { id: 1, icon: 'home-outline', title: 'Brand Name' },
-    { id: 2, icon: 'home-outline', title: 'Dashboard' },
-    { id: 3, icon: 'settings-outline', title: 'Settings' },
-    { id: 4, icon: 'log-out-outline', title: 'Sing Out' },
-  ];
+// Constantes
 
+export const Navigation = () => {
   // Recuperamos el estado del reducer Navigation
   const navigationState = useSelector((state) => state.navigation);
 

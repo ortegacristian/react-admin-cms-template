@@ -2,39 +2,22 @@
 import React from 'react';
 
 // Redux
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { toggle } from '../../actions/navigation';
+
+// Componentes
+import { TopBar } from '../TopBar';
 
 export const Main = () => {
-  const dispatch = useDispatch();
-
   // Obtenemos el estado del reducer Navigation
   const navigationState = useSelector((state) => state.navigation);
 
   // Miramos si tiene que mostrar o ocultar el menu de navegación
   const toggleActiveClass = (navigationState.toggleActive) ? ' active' : '';
 
-  function onClick() {
-    dispatch(toggle());
-  }
-
   return (
     <div className={`main${toggleActiveClass}`}>
-      <div className="topbar">
-        <div className="toggle" onClick={onClick} onKeyUp={onClick} role="button" tabIndex={0}>
-          <ion-icon name="menu-outline" />
-        </div>
-        <div className="search">
-          <label htmlFor="search">
-            <input type="text" id="search" placeholder="Search here" />
-            <ion-icon name="search-outline" />
-          </label>
-        </div>
-        <div className="user">
-          <img src="./assets/user.jpg" alt="user" />
-        </div>
-      </div>
+      <TopBar />
       <div className="cardBox">
         <div className="card">
           <div>
