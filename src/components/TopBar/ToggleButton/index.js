@@ -4,13 +4,13 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 
 // Acciones de redux
-import { toggle } from '../../../actions/navigation';
+import { toggleNavigation } from '../../../actions/navigation';
 
 export const ToggleButton = () => {
   const dispatch = useDispatch();
 
   function onClick() {
-    dispatch(toggle());
+    dispatch(toggleNavigation());
   }
 
   return (

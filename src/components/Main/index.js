@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 // Componentes
 import { TopBar } from '../TopBar';
+import { Card } from '../UI/Card';
 
 export const Main = () => {
   // Obtenemos el estado del reducer Navigation
@@ -19,42 +20,10 @@ export const Main = () => {
     <div className={`main${toggleActiveClass}`}>
       <TopBar />
       <div className="cardBox">
-        <div className="card">
-          <div>
-            <div className="numbers">1,504</div>
-            <div className="cardName">Daily Views</div>
-          </div>
-          <div className="iconBox">
-            <ion-icon name="eye-outline" />
-          </div>
-        </div>
-        <div className="card">
-          <div>
-            <div className="numbers">80</div>
-            <div className="cardName">Sales</div>
-          </div>
-          <div className="iconBox">
-            <ion-icon name="cart-outline" />
-          </div>
-        </div>
-        <div className="card">
-          <div>
-            <div className="numbers">284</div>
-            <div className="cardName">Comments</div>
-          </div>
-          <div className="iconBox">
-            <ion-icon name="chatbubbles-outline" />
-          </div>
-        </div>
-        <div className="card">
-          <div>
-            <div className="numbers">$7,842</div>
-            <div className="cardName">Earning</div>
-          </div>
-          <div className="iconBox">
-            <ion-icon name="cash-outline" />
-          </div>
-        </div>
+        <Card numbers="1,504" cardName="Daily Views" iconName="eye-outline" />
+        <Card numbers="80" cardName="Sales" iconName="cart-outline" />
+        <Card numbers="284" cardName="Comments" iconName="chatbubbles-outline" />
+        <Card numbers="$7,842" cardName="Earning" iconName="cash-outline" />
       </div>
 
       <div className="details">

@@ -46,15 +46,16 @@ body {
       position: relative;
       width: 100%;
       list-style: none;
-      border-top-left-radius:30px;
-      border-bottom-left-radius:30px;
       
       &.hovered,
       &:hover {
-        background: var(--white);
         
-        a {
+        > .groupLink,
+        > a {
+          background: var(--white);
           color: var(--blue);
+          border-top-left-radius:30px;
+          border-bottom-left-radius:30px;
 
           &::before {
             content: '';
@@ -84,11 +85,7 @@ body {
         }
       }
       
-      &:nth-child(1){
-        margin-bottom: 40px;
-        pointer-events: none;
-      }
-      
+      .groupLink,
       a {
         position: relative;
         display: block;
@@ -108,6 +105,11 @@ body {
           ion-icon {
             font-size: 1.75em;
           }
+
+          ion-icon[name="chevron-down-outline"] {
+            vertical-align: text-bottom;
+            margin-bottom: 3px;
+          }
         }
 
         .title {
@@ -119,6 +121,29 @@ body {
           white-space: nowrap;
           margin-left: 10px;
         }
+      }
+
+      .groupLink.active {
+        background: var(--white);
+        color: var(--blue);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+
+      .groupLink.active ~ .subLinks{
+        display: block;
+        margin-left: 20px;
+      }
+
+      .subLinks {
+        display: none;
+      }
+    }
+
+    > li {
+      &:nth-child(1){
+        margin-bottom: 40px;
+        pointer-events: none;
       }
     }
   }

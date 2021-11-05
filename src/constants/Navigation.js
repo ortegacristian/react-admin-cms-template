@@ -1,56 +1,67 @@
 const navigationLinks = [
   {
-    id: 1, icon: 'home-outline', title: 'Brand Name', className: '',
+    id: '1', icon: 'home-outline', title: 'Brand Name', className: '',
   },
   {
-    id: 2,
-    icon: 'home-outline',
+    id: '2', icon: 'book-outline', title: 'Intro', className: 'hovered', url: '/',
+  },
+  {
+    id: '3',
+    icon: 'chevron-forward-outline',
     title: 'Common',
-    className: 'hovered',
+    className: '',
     subNavigationLinks: [
       {
-        id: '2_1', icon: '', title: 'Intro', className: '',
+        id: '3_1', icon: 'bookmark-outline', title: 'Colores', className: '', url: '/common/colors',
       },
       {
-        id: '2_2', icon: '', title: 'Colores', className: '',
+        id: '3_2', icon: 'bookmark-outline', title: 'Tipografia', className: '', url: '/common/typography',
       },
       {
-        id: '2_3', icon: '', title: 'Tipografia', className: '',
+        id: '3_3', icon: 'bookmark-outline', title: 'Avatar', className: '', url: '/common/avatar',
       },
       {
-        id: '2_4', icon: '', title: 'Avatar', className: '',
+        id: '3_4', icon: 'bookmark-outline', title: 'Insignias', className: '', url: '/common/badges',
       },
       {
-        id: '2_5', icon: '', title: 'Insignias', className: '',
+        id: '3_5', icon: 'bookmark-outline', title: 'Botones', className: '', url: '/common/buttons',
       },
       {
-        id: '2_6', icon: '', title: 'Botones', className: '',
+        id: '3_6', icon: 'bookmark-outline', title: 'Alertas', className: '', url: '/common/alerts',
       },
       {
-        id: '2_6', icon: '', title: 'Alertas', className: '',
-      },
-      {
-        id: '2_6', icon: '', title: 'Spinners', className: '',
+        id: '3_7', icon: 'bookmark-outline', title: 'Spinners', className: '', url: '/common/spinners',
       },
     ],
   },
   {
-    id: 3, icon: 'settings-outline', title: 'Forms', className: '',
+    id: '4',
+    icon: 'chevron-forward-outline',
+    title: 'Forms',
+    className: '',
+    subNavigationLinks: [
+      {
+        id: '4_1', icon: 'bookmark-outline', title: 'Input', className: '', url: '/form/input',
+      },
+      {
+        id: '4_1', icon: 'bookmark-outline', title: 'Select', className: '', url: '/form/select',
+      },
+    ],
   },
   {
-    id: 4, icon: 'log-out-outline', title: 'Media', className: '',
+    id: '5', icon: 'chevron-forward-outline', title: 'Media', className: '', subNavigationLinks: [],
   },
   {
-    id: 4, icon: 'log-out-outline', title: 'Graphics', className: '',
+    id: '6', icon: 'chevron-forward-outline', title: 'Graphics', className: '', subNavigationLinks: [],
   },
   {
-    id: 4, icon: 'log-out-outline', title: 'Clipboard', className: '',
+    id: '7', icon: 'chevron-forward-outline', title: 'Clipboard', className: '', subNavigationLinks: [],
   },
   {
-    id: 4, icon: 'log-out-outline', title: 'Modals', className: '',
+    id: '8', icon: 'chevron-forward-outline', title: 'Modals', className: '', subNavigationLinks: [],
   },
   {
-    id: 4, icon: 'log-out-outline', title: 'Tooltips', className: '',
+    id: '9', icon: 'chevron-forward-outline', title: 'Tooltips', className: '', subNavigationLinks: [],
   },
 ];
 

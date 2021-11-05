@@ -9,6 +9,7 @@ export const AppRouter = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={Container} />
+      <Route exact path="/common/colors" component={Container} />
     </Switch>
   </Router>
 );

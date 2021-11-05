@@ -1,9 +1,14 @@
 // Types
 import { types } from '../types/types';
 
-export const toggle = () => ({
-  type: types.toggle,
+export const toggleNavigation = () => ({
+  type: types.toggleNavigation,
   payload: {},
 });
 
-export default toggle;
+export const collapseNavigationSubLinks = (linkId) => ({
+  type: types.collapseNavigationSubLinks,
+  payload: {
+    linkId,
+  },
+});
