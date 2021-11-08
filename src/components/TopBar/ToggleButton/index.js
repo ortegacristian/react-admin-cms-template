@@ -6,6 +6,9 @@ import { useDispatch } from 'react-redux';
 // Acciones de redux
 import { toggleNavigation } from '../../../actions/navigation';
 
+// Estilos
+import './index.scss';
+
 export const ToggleButton = () => {
   const dispatch = useDispatch();
 

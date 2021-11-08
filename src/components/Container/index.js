@@ -5,6 +5,9 @@ import React from 'react';
 import { Navigation } from '../Navigation';
 import { Main } from '../Main';
 
+// Estilos
+import './index.scss';
+
 export const Container = () => (
   <div className="container">
     <Navigation />

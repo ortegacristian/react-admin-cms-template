@@ -8,7 +8,8 @@ import navigationLinks from '../../constants/Navigation';
 // Componentes
 import { NavigationLink } from './NavigationLink';
 
-// Constantes
+// Estilos
+import './index.scss';
 
 export const Navigation = () => {
   // Recuperamos el estado del reducer Navigation

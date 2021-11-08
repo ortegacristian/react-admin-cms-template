@@ -1,0 +1,16 @@
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+@media (max-width: 580px) {
+  .toggle {
+    z-index: 1001;
+  } 
+}

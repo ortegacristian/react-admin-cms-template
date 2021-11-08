@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Estilos
+import './index.scss';
+
 export const Card = ({ numbers, cardName, iconName }) => (
   <div className="card">
     <div>

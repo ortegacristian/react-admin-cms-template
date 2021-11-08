@@ -44,7 +44,7 @@ const navigationLinks = [
         id: '4_1', icon: 'bookmark-outline', title: 'Input', className: '', url: '/form/input',
       },
       {
-        id: '4_1', icon: 'bookmark-outline', title: 'Select', className: '', url: '/form/select',
+        id: '4_2', icon: 'bookmark-outline', title: 'Select', className: '', url: '/form/select',
       },
     ],
   },

@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Estilos
+import './index.scss';
+
 export const Searcher = () => (
   <div className="search">
     <label htmlFor="search">
